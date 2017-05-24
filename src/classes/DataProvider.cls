@@ -1,6 +1,6 @@
 public class DataProvider {
-    @AuraEnabled public static UserRole[] getUserRoles() {
+    @AuraEnabled public static Account[] getUserRoles() {
         
-        return [SELECT Name, ParentRoleId FROM UserRole];
+        return [SELECT Name, ParentId FROM Account];
     }
 }
