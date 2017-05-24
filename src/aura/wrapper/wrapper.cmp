@@ -1,4 +1,4 @@
-<aura:component controller="DataProvider"  implements="flexipage:availableForAllPageTypes" access="global">
+<aura:component controller="Campaigns"  implements="flexipage:availableForAllPageTypes" access="global">
 	 <aura:attribute name="nodes" type="Object" />
     <aura:handler name="init" value="{!this}" action="{!c.init}" />
     <aura:iteration items="{!v.nodes}" var="node">
