@@ -1,7 +1,7 @@
-<aura:component controller="Campaigns"  implements="flexipage:availableForAllPageTypes" access="global">
+<aura:component controller="Campaign"  implements="flexipage:availableForAllPageTypes" access="global">
 	 <aura:attribute name="nodes" type="Object" />
     <aura:handler name="init" value="{!this}" action="{!c.init}" />
-    <aura:iteration items="{!v.nodes}" var="node">
+    <aura:iteration items="{!v.node}" var="node">
         <c:node node="{!node}" />
     </aura:iteration>
 </aura:component>

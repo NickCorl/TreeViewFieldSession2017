@@ -19,7 +19,7 @@
         <aura:if isTrue="{!v.expanded}">
             <div class="node">
                 <aura:iteration items="{!v.node.items}" var="node">
-                    <c:theNode node="{!node}" />
+                    <c:node node="{!node}" />
                 </aura:iteration>
             </div>
         </aura:if>
